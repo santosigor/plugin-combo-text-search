@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/combo-text-search.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Combo Text Search</h1>
+      <div class="comboTextSearch">
+        <div class="ctsInput clkN">
+          <input type="text" placeholder="Selecione o grupo..." class="clkN" id="ctsInput" onkeyup="searchCT()">
+          <span>&nbsp;</span>
+        </div>
+        <div id="ctsCombo" class="ctsCombo">
+          <span>About</span>
+          <span>Base</span>
+          <span>Blog</span>
+          <span>Contact</span>
+          <span>Custom</span>
+          <span>Support</span>
+          <span>Tools</span>
+          <div id="resultCTS" style="display: none;">Nenhum grupo foi encontrado.</div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>  
+    <script type="text/javascript" src="assets/js/combo-text-search.js"></script>
+
+  </body>
+</html>
