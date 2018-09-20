@@ -1,30 +1,24 @@
 .comboTextSearch {
   position: relative;
+  margin-bottom: 20px;
   .ctsInput {
-    position: relative;
+    background: #fff;
+    background: url('../../icon-caret-down.png') center right 14px;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
     input {
       font-size: 16px;
       padding: 14px 45px 12px 45px;
       border: none;
       width:100%;
       border: 1px solid #ddd;
+      background-color: transparent;
       background-image: url('../../icon-search.png');
       background-position: 14px 12px;
       background-repeat: no-repeat;
       &:focus {
         outline: 3px solid #ddd;
       }
-    }
-    span {
-      display: block;
-      position: absolute;
-      top: calc(50% - 6px);
-      right:16px;
-      width:12px;
-      cursor: pointer;
-      height:12px;
-      background: url('../../icon-caret-down.png');
-      background-size: 100% auto;
     }
   }
   .ctsCombo {
@@ -36,15 +30,20 @@
     z-index: 1;
     overflow: auto;
     max-height: 250px;
-    span, div {
+    a.itemList {
       padding: 12px 16px;
       display: block;
-    }
-    span {
       cursor: pointer;
+      text-decoration: none;
+      color:#333;
       &:hover {
         background-color: #f1f1f1;
+        text-decoration: none;
       }
+    }
+    div#resultCTS {
+      padding: 12px 16px;
+      display: none;
     }
   }
 }

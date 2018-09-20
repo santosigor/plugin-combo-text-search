@@ -11,19 +11,18 @@
     <div class="container">
       <h1>Combo Text Search</h1>
       <div class="comboTextSearch">
-        <div class="ctsInput clkN">
-          <input type="text" placeholder="Selecione o grupo..." class="clkN" id="ctsInput" onkeyup="searchCT()">
-          <span>&nbsp;</span>
+        <div class="ctsInput">
+          <input type="text" placeholder="Selecione o grupo..." id="ctsInput" onkeyup="searchCT()" onfocus="openCombo()" onblur="closeCombo()">
         </div>
         <div id="ctsCombo" class="ctsCombo">
-          <span>About</span>
-          <span>Base</span>
-          <span>Blog</span>
-          <span>Contact</span>
-          <span>Custom</span>
-          <span>Support</span>
-          <span>Tools</span>
-          <div id="resultCTS" style="display: none;">Nenhum grupo foi encontrado.</div>
+          <a href="#" class="itemList">About</a>
+          <a href="#" class="itemList">Base</a>
+          <a href="#" class="itemList">Blog</a>
+          <a href="#" class="itemList">Contact</a>
+          <a href="#" class="itemList">Custom</a>
+          <a href="#" class="itemList">Support</a>
+          <a href="#" class="itemList">Tools</a>
+          <div id="resultCTS">Nenhum grupo foi encontrado.</div>
         </div>
       </div>
     </div>
